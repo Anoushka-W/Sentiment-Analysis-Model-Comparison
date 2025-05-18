@@ -1,3 +1,18 @@
+"""
+This Python script performs sentiment analysis using TextBlob and is organized into two main parts: 
+interactive sentiment prediction and dataset-based evaluation.
+
+In the interactive section, users can input custom text to receive real-time sentiment feedback 
+(positive, negative, or neutral), allowing for quick testing and experimentation.
+
+In the dataset evaluation section, the script reads a synthetic CSV dataset, applies the sentiment 
+analysis function to the review texts, and compares the predicted labels with actual labels to 
+calculate accuracy using scikit-learn's metrics.
+
+It prints the accuracy and a preview of the review texts alongside their original and predicted 
+labels. The use of pandas ensures efficient data manipulation, and the combination of TextBlob 
+and scikit-learn provides a simple yet powerful framework for evaluating sentiment models.
+"""
 
 import pandas as pd
 from textblob import TextBlob
